@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Antonina Telehuz](https://up.htmlacademy.ru/adaptive/22/user/1311487).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199].
 
 ---
 
