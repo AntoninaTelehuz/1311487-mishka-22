@@ -1,0 +1,39 @@
+.main-nav__toggle {
+  border: 0;
+  background: url("../img/menu.svg");
+  width: 20px;
+  height: 14px;
+  border-radius: 0;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: @black;
+}
+
+.site-list__item,
+.user-list__item {
+  list-style: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  box-shadow: 0 1px 0 @light-gray, inset 0 1px 0 @light-gray;
+}
+
+.user-list__search-title {
+  border: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.user-list__search-title[type="search"]::-moz-placeholder {
+  color: @black;
+}
+
+.user-list__search-title[type="search"]::-webkit-input-placeholder {
+  color: @black;
+}
