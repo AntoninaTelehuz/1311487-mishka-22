@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="header">
@@ -28,7 +29,7 @@
                 <svg class="user-list__search-icon" width="18" height="18">
                   <use xlink:href="./img/search.svg#search-icon"></use>
                 </svg>
-                <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+                <input class="user-list__search-title" type="search" name="search" id="search" placeholder="Поиск по сайту">
                 <label for="search"></label>
               </form>
             </li>
@@ -52,79 +53,79 @@
           </header>
           <p class="order__content">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="order__type product-type">
-              <legend class="product-type__title">Тип</legend>
+            <fieldset class="order__section product-type">
+              <legend class="order__section-title product-type__title">Тип</legend>
               <ul class="product-type__list">
                 <li class="product-type__item">
-                  <input type="radio" name="product-type" value="accessories" id="filter-accessories" checked>
-                  <label for="filter-accessories">Аксессуар для интерьера</label>
+                  <input class="product-type__selection" type="radio" name="product-type" value="accessories" id="filter-accessories" checked>
+                  <label class="order__option" for="filter-accessories">Аксессуар для интерьера</label>
                 </li>
                 <li class="product-type__item">
-                  <input type="radio" name="product-type" value="toys" id="filter-toys">
-                  <label for="filter-toys">Детская игрушка</label>
+                  <input class="product-type__selection" type="radio" name="product-type" value="toys" id="filter-toys">
+                  <label class="order__option" for="filter-toys">Детская игрушка</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="order__color product-color">
-              <legend class="product-color__title">Цвет</legend>
+            <fieldset class="order__section product-color">
+              <legend class="order__section-title product-color__title">Цвет</legend>
               <ul class="product-color__list">
                 <li class="product-color__item">
-                  <input type="checkbox" name="white" id="color-white" checked>
-                  <label for="color-white">Белый</label>
+                  <input class="product-color__selection" type="checkbox" name="white" id="color-white" checked>
+                  <label class="order__option" for="color-white">Белый</label>
                 </li>
                 <li class="product-color__item">
-                  <input type="checkbox" name="grey" id="color-grey" checked>
-                  <label for="color-grey">Серый</label>
+                  <input class="product-color__selection" type="checkbox" name="grey" id="color-grey" checked>
+                  <label class="order__option" for="color-grey">Серый</label>
                 </li>
                 <li class="product-color__item">
-                  <input type="checkbox" name="tiffani" id="color-tiffani">
-                  <label for="color-tiffani">«Тиффани»</label>
+                  <input class="product-color__selection" type="checkbox" name="tiffani" id="color-tiffani">
+                  <label class="order__option" for="color-tiffani">«Тиффани»</label>
                 </li>
                 <li class="product-color__item">
-                  <input type="checkbox" name="black" id="color-black">
-                  <label for="color-black">Черный</label>
+                  <input class="product-color__selection" type="checkbox" name="black" id="color-black">
+                  <label class="order__option" for="color-black">Черный</label>
                 </li>
                 <li class="product-color__item">
-                  <input type="checkbox" name="pink" id="color-pink">
-                  <label for="color-pink">Розовый</label>
+                  <input class="product-color__selection" type="checkbox" name="pink" id="color-pink">
+                  <label class="order__option" for="color-pink">Розовый</label>
                 </li>
                 <li class="product-color__item">
-                  <input type="checkbox" name="orange" id="color-orange">
-                  <label for="color-orange">Оранжевый</label>
+                  <input class="product-color__selection" type="checkbox" name="orange" id="color-orange">
+                  <label class="order__option" for="color-orange">Оранжевый</label>
                 </li>
               <ul>
             </fieldset>
-            <fieldset class="order__name client-name">
-              <legend class="client-name__title">ФИО</legend>
+            <fieldset class="order__section client-name">
+              <legend class="order__section-title client-name__title">ФИО</legend>
               <p class="client-name__data">
-                <label class="client-name__name" for="message-name">Имя:</label>
+                <label class="client-name__name order__option" for="message-name">Имя:</label>
                 <input class="client-name__range" id="message-name" type="text" name="name" placeholder="Введите ваше имя*">
               </p>
               <p class="client-name__data">
-                <label class="client-name__second-name" for="message-second-name">Фамилия:</label>
+                <label class="client-name__second-name order__option" for="message-second-name">Фамилия:</label>
                 <input class="client-name__range" id="message-second-name" type="text" name="second-name" placeholder="Укажите фамилию*">
               </p>
               <p class="client-name__data">
-                <label class="client-name__patronymic" for="message-patronymic">Отчество:</label>
+                <label class="client-name__patronymic order__option" for="message-patronymic">Отчество:</label>
                 <input class="client-name__range" id="message-patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
               </p>
             </fieldset>
-            <fieldset class="order__phone client-phone">
-              <legend class="client-phone__title">тел</legend>
+            <fieldset class="order__section client-phone">
+              <legend class="order__section-title client-phone__title">тел</legend>
               <p class="client-phone__data client-phone__data--phone">
                 <label class="visually-hidden" for="message-phone">Телефон</label>
                 <input class="client-phone__range client-phone__range--img" id="message-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               </p>
             </fieldset>
-            <fieldset class="order__mail client-email">
-              <legend class="client-email__title">e-mail</legend>
+            <fieldset class="order__section client-email">
+              <legend class="order__section-title client-email__title">e-mail</legend>
               <p class="client-email__data client-email__data--email">
                 <label class="visually-hidden" for="message-email">Ваш e-mail:</label>
                 <input class="client-email__range client-email__range--img" id="message-email" type="email" name="email" placeholder="Ваш Email*">
               </p>
             </fieldset>
-            <fieldset class="order__more client-more">
-              <legend class="client-more__title">доп</legend>
+            <fieldset class="order__section client-more">
+              <legend class="order__section-title client-more__title">доп</legend>
               <label class="visually-hidden" for="additional-information">Текст письма:</label>
               <p class="client-more__data">
                 <textarea class="client-more__range" name="comment" cols="40" rows="3" placeholder="Опишите все ваши пожелания к заказу" id="additional-information"></textarea>
