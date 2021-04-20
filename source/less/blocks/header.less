@@ -14,15 +14,6 @@
   text-align: center;
   height: 35px;
   margin: 22px 0;
-
-  @media (min-width: @tablet-width) {
-    height: 46px;
-  }
-
-  @media (min-width: @desktop-width) {
-    order: 2;
-    height: 72px;
-  }
 }
 
 .header__logo-image--middle,
@@ -39,4 +30,21 @@
   width: 20px;
   height: 14px;
   border-radius: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .header__logo {
+    height: 46px;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__logo {
+    order: 2;
+    height: 72px;
+  }
 }
