@@ -7,11 +7,30 @@
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
+  padding-top: 73px;
+  padding-bottom: 28px;
+}
+
+.about-us__list {
+  display: grid;
+  grid-template-rows: repeat(6, 94px);
+  row-gap: 29px;
+  margin: 0;
+  padding: 0;
 }
 
 .about-us__item {
+  display: flex;
+  align-items: flex-end;
   font-size: 17px;
   line-height: 20px;
   list-style: none;
-  height: 123px;
+  height: 94px;
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin: 0;
+  }
 }

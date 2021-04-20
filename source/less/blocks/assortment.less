@@ -1,13 +1,28 @@
 .assortment__header {
-  background: url("../img/main-small.png") no-repeat;
-  width: 260px;
+  width: 100%;
+  max-height: 100%;
+}
+
+.assortment__list {
+  margin: 0;
+  padding: 0;
 }
 
 .assortment__slogan {
+  background: url("../img/main-small.png") center -17px no-repeat @assortment;
+  display: flex;
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  margin: 0;
+  padding-top: 73px;
+  padding-bottom: 120px;
+  text-align: center;
+  min-height: 283px;
 }
 
 .assortment__item {
@@ -16,17 +31,24 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+  max-height: 103px;
+  width: 100%;
 }
 
 .assortment__link {
+  display: inline-block;
   text-decoration: none;
   color: @white;
+  width: 100%;
+  max-height: 103px;
+  padding-top: 24px;
+  padding-bottom: 31px;
 
   &--interior {
-    background: @light-turquoise url("../img/interior.svg") no-repeat;
+    background: url("../img/interior.svg") top 23px right 36px no-repeat @light-turquoise;
   }
 
   &--toys {
-    background: @dark-turquoise url("../img/toy.svg") no-repeat;
+    background: url("../img/toy.svg") top 21px right 27px no-repeat @dark-turquoise;
   }
 }

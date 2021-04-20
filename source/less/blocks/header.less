@@ -1,39 +1,42 @@
-.main-nav__toggle {
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo-image--small {
+  height: 35px;
+  width: 86px;
+}
+
+.header__logo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 35px;
+  margin: 22px 0;
+
+  @media (min-width: @tablet-width) {
+    height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    height: 72px;
+  }
+}
+
+.header__logo-image--middle,
+.header__logo-image--big {
+  display: none;
+}
+
+.header__toggle {
+  position: absolute;
+  top: 32px;
+  right: 31px;
   border: 0;
   background: url("../img/menu.svg");
   width: 20px;
   height: 14px;
   border-radius: 0;
-}
-
-.site-list__link {
-  text-decoration: none;
-  color: @black;
-}
-
-.site-list__item,
-.user-list__item {
-  list-style: none;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  box-shadow: 0 1px 0 @light-gray, inset 0 1px 0 @light-gray;
-}
-
-.user-list__search-title {
-  border: none;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  opacity: 1;
-}
-
-.user-list__search-title[type="search"]::-moz-placeholder {
-  color: @black;
-}
-
-.user-list__search-title[type="search"]::-webkit-input-placeholder {
-  color: @black;
 }
