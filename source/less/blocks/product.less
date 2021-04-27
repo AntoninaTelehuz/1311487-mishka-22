@@ -1,3 +1,17 @@
+.product {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../img/zigzag-line.svg");
+    width: 100%;
+    min-width: 320px;
+    height: 6px;
+    bottom: -20px;
+  }
+}
+
 .product__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 25px;
@@ -60,3 +74,38 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .product__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+  }
+
+  .product__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 82%;
+  }
+
+  .product__remark {
+    font-size: 17px;
+    line-height: 17px;
+    width: 18%;
+    min-height: 34px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .product__main {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .product__img {
+    grid-column: 2 / -1;
+    grid-row: 1 / span 4;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -45,3 +45,35 @@
 .user-list__search-title[type="search"]::-webkit-input-placeholder {
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    order: 2;
+    justify-content: flex-end;
+  }
+
+  .user-list__form {
+    width: 82px;
+  }
+
+  .user-list__link {
+    width: 315px;
+    padding-right: 50px;
+    height: 88px;
+  }
+
+  .user-list__item {
+    box-shadow: none;
+  }
+
+  .user-list__search-title {
+    height: 88px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}

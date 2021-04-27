@@ -52,3 +52,36 @@
     background: url("../img/toy.svg") top 21px right 27px no-repeat @dark-turquoise;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .assortment__hyphenation {
+    display: none;
+  }
+
+  .assortment__slogan {
+    display: flex;
+    min-height: 493px;
+    background: url("../img/main.png") center top -50px no-repeat @assortment;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .assortment__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .assortment__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

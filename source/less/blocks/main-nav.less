@@ -7,10 +7,41 @@
   padding: 0;
 }
 
+.main-nav__delivery {
+  display: none;
+}
+
+.main-nav__delivery-link {
+  text-decoration: none;
+}
+
 @media (min-width: @tablet-width) {
-  .main-nav__wrapper {
+  .main-nav {
     display: flex;
-    width: 640px;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main-nav__delivery {
+    display: flex;
+    order: 4;
+    flex-grow: 2;
+    flex-shrink: 0;
+    padding-right: 50px;
+    background-color: @assortment;
+    padding-top: 21px;
+    justify-content: flex-end;
+  }
+
+  .main-nav__delivery-link {
+    display: flex;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: @black;
+    font-size: 15px;
+    line-height: 24px;
+    width: 259px;
+    justify-content: flex-end;
   }
 }
+

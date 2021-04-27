@@ -34,17 +34,30 @@
 
 @media (min-width: @tablet-width) {
   .header__logo {
+    order: 1;
     height: 46px;
+    max-width: 371px;
+    text-align: left;
   }
 
   .header__toggle {
     display: none;
   }
+
+  .header__logo-image--small,
+  .header__logo-image--big {
+    display: none;
+  }
+
+  .header__logo-image--middle {
+    display: block;
+    height: 46px;
+    width: 113px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .header__logo {
-    order: 2;
-    height: 72px;
+    height: 132px;
   }
 }

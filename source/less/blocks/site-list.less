@@ -17,3 +17,29 @@
   width: 100%;
 }
 
+.site-list__item:nth-of-type(n+3) {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    order: 3;
+    background-color: @assortment;
+    padding-left: 50px;
+    padding-right: 74px;
+    padding-top: 21px;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+  }
+
+  .site-list__link {
+    width: 167px;
+    height: 24px;
+    padding: 0;
+  }
+}
