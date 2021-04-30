@@ -103,9 +103,32 @@
   }
 
   .product__img {
-    grid-column: 2 / -1;
-    grid-row: 1 / span 4;
+    grid-column: 2 ~"/" -1;
+    grid-row: 1 ~"/" span 4;
     height: 100%;
     width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__main {
+    padding-top: 71px;
+    padding-bottom: 71px;
+    position: relative;
+    padding-left: 132px;
+    min-height: 790px;
+  }
+
+  .product__header {
+    position: absolute;
+    top: 61px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+  }
+
+  .product__content {
+    padding-top: 215px;
   }
 }

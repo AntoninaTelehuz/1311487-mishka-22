@@ -54,13 +54,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .assortment {
+    background-color: @assortment;
+  }
+
   .assortment__hyphenation {
     display: none;
   }
 
   .assortment__slogan {
     display: flex;
-    min-height: 493px;
+    height: 627px;
     background: url("../img/main.png") center top -50px no-repeat @assortment;
     padding-top: 10px;
     justify-content: center;
@@ -83,5 +87,11 @@
   .assortment__item {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .assortment__slogan {
+    height: 627px;
   }
 }

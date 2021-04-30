@@ -43,3 +43,32 @@
     padding: 0;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 387px;
+    order: 1;
+    padding: 0;
+    background-color: @white;
+    max-height: 88px;
+  }
+
+  .site-list__item {
+    max-width: 185px;
+    min-height: 88px;
+  }
+
+  .site-list__item:nth-of-type(n+3) {
+    display: inline-block;
+    justify-content: flex-end;
+  }
+
+  .site-list__link {
+    width: 185px;
+  }
+}

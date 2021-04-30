@@ -31,3 +31,34 @@
     margin: 0;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .about-us__list {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 123px);
+    max-height: 465px;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+
+    &--price {
+      grid-column: 1 ~"/" 2;
+      grid-row: 2 ~"/" 3;
+    }
+
+    &--likes {
+      grid-column: 1 ~"/" 2;
+      grid-row: 3 ~"/" 4;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__list {
+    max-width: 665px;
+    margin: 0 auto;
+  }
+}

@@ -10,7 +10,7 @@
   <body class="page">
     <header class="header">
       <nav class="main-nav">
-        <a class="header__logo container">
+        <a class="header__logo">
           <img class="header__logo-image--small" src="img/mishka-logo-small.svg" width="86" height="35" alt="Магазин Мишка">
           <img class="header__logo-image--middle" src="img/mishka-logo-middle.svg" width="113" height="46" alt="Магазин Мишка">
           <img class="header__logo-image--big" src="img/mishka-logo-big.svg" width="149" height="72" alt="Магазин Мишка">
@@ -47,18 +47,18 @@
             <li class="user-list__item user-list__item--basket">
               <!--
               <svg class="user-list__basket-icon" width="18" height="18">
-                <use xlink:href="img/cart.svg#basket-icon"></use>
+                  <use xlink:href="img/cart.svg#basket-icon"></use>
               </svg>
-              -->
+                -->
               <a class="user-list__link" href="form.html">Корзина: пока пуста</a>
             </li>
           </ul>
-          <div class="main-nav__delivery">
-            <a class="main-nav__delivery-link" href="index.html">Бесплатная доставка по России</a>
-          </div>
         </nav>
     </header>
     <main class="page-main">
+      <div class="main-nav__delivery">
+        <a class="main-nav__delivery-link" href="index.html">Бесплатная доставка по России</a>
+      </div>
       <h1 class="visually-hidden">Mishka - лучшие изделия ручной работы для дома</h1>
       <section class="assortment">
         <header class="assortment__header">
@@ -71,7 +71,7 @@
             <br> работы для дома
           </p>
         </header>
-        <div class="">
+        <div class="assortment__section">
           <ul class="assortment__list">
             <li class="assortment__item">
               <a class="assortment__link assortment__link--interior container" href="catalog.html">Предметы <br> интерьера</a>
@@ -184,23 +184,27 @@
       <section class="contacts">
         <div class="container">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__data">
-            <p class="contacts__data-element">e-mail:</p>
-            <a class="contacts__data-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
-          <div class="contacts__data">
-            <p class="contacts__data-element">адрес:</p>
-            <p class="contacts__data-adress">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+          <div class="contacts__information">
+            <div class="contacts__data">
+              <p class="contacts__data-element">e-mail:</p>
+              <a class="contacts__data-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__data">
+              <p class="contacts__data-element">адрес:</p>
+              <p class="contacts__data-adress">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+            </div>
           </div>
         </div>
-        <img class="contacts__img" src="img/map-small.png" alt="карта" width="320" height="454">
+        <a class="contacts__map" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        </a>
         <button class="contacts__button" type="button">Напишите нам</button>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
         <div class="page-footer__logo">
-          <a class="page-footer__link" href="index.html"> <img class="page-footer__img" src="img/logo-footer.svg" alt="logo-footer" width="102" height="34"></a>
+          <a class="page-footer__link" href="index.html"> <img class="page-footer__img" src="img/logo-footer.svg" alt="logo-footer" width="102" height="27"></a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">

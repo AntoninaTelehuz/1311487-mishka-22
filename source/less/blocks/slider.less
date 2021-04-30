@@ -2,6 +2,17 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../img/zigzag-line.svg");
+    width: 100%;
+    min-width: 320px;
+    height: 6px;
+    bottom: -25px;
+  }
 }
 
 .slider__list {
@@ -26,6 +37,7 @@
 }
 
 .slider__author {
+  display: block;
   font-weight: bold;
   color: @black;
   margin: 0;
@@ -71,7 +83,6 @@
 .slider__button {
   display: flex;
   justify-content: center;
-  position: relative;
   font-family: "Open Sans", "Arial", sans-serif;
   color: @dark-gray;
   font-weight: bold;
@@ -87,21 +98,40 @@
   padding: 0;
   padding-top: 14px;
   padding-bottom: 14px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background: url("../img/zigzag-line.svg");
-    width: 100%;
-    min-width: 320px;
-    height: 6px;
-    top: 88px;
-  }
 }
 
-@media (min-width: @desktop-width) {
-  .slider__item:nth-child(2),
-  .slider__item:nth-child(3) {
-    display: none;
+.slider__item:nth-child(2),
+.slider__item:nth-child(3) {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    min-height: 457px;
+    background: url("../img/slider.png")  no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 152px) 1fr;
+  }
+
+  .slider__content {
+    grid-column: 1 ~"/" span 2;
+    grid-row: 2 ~"/" 3;
+    min-width: 668px;
+  }
+
+  .slider__author {
+    grid-row: 3 ~"/" -3;
+    grid-column: 1 ~"/" -2;
+  }
+
+  .slider__toggles {
+    grid-column: 2 ~"/" 3;
+    grid-row: 3 ~"/" -1;
+  }
+
+  .slider__button {
+    grid-column: 2 ~"/" 3;
+    grid-row: 1 ~"/" 2;
   }
 }

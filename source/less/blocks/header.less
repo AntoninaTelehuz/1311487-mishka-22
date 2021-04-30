@@ -57,7 +57,24 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header {
+    max-height: 88px;
+  }
+
   .header__logo {
-    height: 132px;
+    height: 88px;
+    order: 2;
+    max-width: 259px;
+  }
+
+  .header__logo-image--small,
+  .header__logo-image--middle {
+    display: none;
+  }
+
+  .header__logo-image--big {
+    display: block;
+    max-width: 149px;
+    height: 88px;
   }
 }

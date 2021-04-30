@@ -21,6 +21,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    max-height: 88px;
   }
 
   .main-nav__delivery {
@@ -45,3 +46,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    max-width: 1150px;
+    max-height: 88px;
+  }
+}

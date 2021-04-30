@@ -15,3 +15,30 @@
   padding-top: 29px;
   padding-bottom: 32px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .page-footer__link {
+    display: inline-block;
+    height: 27px;
+  }
+
+  .page-footer__img {
+    display: block;
+    height: 27px;
+    min-width: 102px;
+  }
+
+  .page-footer__logo,
+  .page-footer__social,
+  .page-footer__copyright {
+    margin-right: 122px;
+  }
+}
